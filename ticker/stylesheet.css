@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.ticker {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 35px;
+    border-bottom: black 3px solid;
+}
+
+#headlines {
+    white-space: nowrap;
+    left: 20%;
+    position: absolute;
+    font-size: 0;
+}
+
+#headlines a {
+    padding: 1% 5% 1% 0;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline black;
+    color: blue;
+}
