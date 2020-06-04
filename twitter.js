@@ -1,9 +1,9 @@
 const https = require("https");
-const { consumerKey, consumerSecret } = require("./secrets.json");
+// const { consumerKey, consumerSecret } = require("./secrets.json");
 
 // GET BEARER TOKEN FOR ACCESS.
 module.exports.getToken = (callback) => {
-    let encodedCreds = Buffer.from(`${process.env.consumerKey || consumerKey}:${process.env.consumerSecret || consumerSecret}`).toString("base64");
+    let encodedCreds = Buffer.from(`${process.env.consumerKey}:${process.env.consumerSecret}`).toString("base64");
 
     const options = {
         host: "api.twitter.com",
