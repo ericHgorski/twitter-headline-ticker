@@ -35,4 +35,4 @@ app.get("/links.json", (req, res) => {
     });
 });
 
-app.listen(8080, () => console.log("Running..."));
+app.listen(process.env.PORT || 8080, () => console.log("Running..."));
